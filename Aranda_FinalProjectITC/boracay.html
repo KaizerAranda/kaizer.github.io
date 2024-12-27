@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boracay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body class="boracay">
+    <header>
+        <h1>Boracay</h1>
+        <nav>
+            <button class="dark-mode-button" onclick="toggleDarkMode()">Toggle Evening Mode</button>
+            <a href="contact.html" style="margin: 0 15px; color: white; text-decoration: none;">Contact</a>
+            <a href="about.html" style="margin: 0 15px; color: white; text-decoration: none;">About</a>
+            <a href="homepage.html" style="margin: 0 15px; color: white; text-decoration: none;">Home</a>
+        </nav>
+    </header>
+    <div class="viewer-container">
+        <div class="viewer">
+            <div class="image-container" id="image1">
+                <img src="images/boracay.jpg" width="200" alt="Boracay Beach">
+            </div>
+            <div class="image-container" id="image2" style="display: none;">
+                <img src="images/boracay1.jpg" width="200" alt="Boracay Sunset">
+            </div>
+            <div class="image-container" id="image3" style="display: none;">
+                <img src="images/boracay2.jpg" width="200" alt="Boracay Activities">
+            </div>
+        </div>
+        <div class="text-container">
+            <p id="text1">
+                Boracay is one of the most breathtaking beach destinations in the Philippines,
+                known for its pristine white sand and crystal-clear turquoise waters.
+            </p>
+            <p id="text2" style="display: none;">
+                The island is surrounded by stunning coral reefs, making it an excellent spot
+                for snorkeling and diving.
+            </p>
+            <p id="text3" style="display: none;">
+                For thrill-seekers, Boracay offers exciting water activities like parasailing,
+                windsurfing, and jet skiing.
+            </p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="nav-button" onclick="showPreviousImage()">↺</button>
+        <button class="nav-button" onclick="showNextImage()">↻</button>
+    </div>
+    <script src="java.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masasa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="masasa">
+    <header>
+        <h1>Masasa</h1>
+        <nav>
+            <button class="dark-mode-button" onclick="toggleDarkMode()">Toggle Evening Mode</button>
+            <a href="contact.html" style="margin: 0 15px; color: white; text-decoration: none;">Contact</a>
+            <a href="about.html" style="margin: 0 15px; color: white; text-decoration: none;">About</a>
+            <a href="homepage.html" style="margin: 0 15px; color: white; text-decoration: none;">Home</a>
+        </nav>
+    </header>
+    <div class="viewer-container">
+        <div class="viewer-container">
+            <div class="viewer">
+                <div class="image-container" id="image1">
+                    <img src="images/masasa.jpg"; width="150"; height="150">
+                </div>
+                <div class="image-container" id="image2">
+                    <img src="images\masasa1.jpg"; width="150"; height="150">
+                </div>
+                <div class="image-container" id="image3">
+                    <img src="images\masasa2.jpg"; width="150"; height="150">
+                </div>
+            </div>
+            <div class="text-container" id="text-container">
+                <p id="text1">Masasa Beach is a hidden gem located in Tingloy, Batangas, known for its pristine white sand and clear turquoise waters, perfect for a peaceful getaway...</p>
+                <p id="text2" style="display: none;">Surrounded by cliffs and lush greenery, the beach offers stunning views and calm waves ideal for swimming and snorkeling. The crystal-clear waters are teeming with marine life, making it a haven for underwater explorers.</p>
+                <p id="text3" style="display: none;">Visitors can enjoy camping under the stars, savoring fresh seafood, and experiencing the warmth of the local community. Masasa Beach is a serene paradise that blends natural beauty with simplicity, leaving unforgettable memories for its guests.</p>
+            </div>
+    </div>
+    <div class="button-container">
+        <button class="nav-button" onclick="showPreviousImage()">↺</button>
+        <button class="nav-button" onclick="showNextImage()">↻</button>
+    </div>
+    <script src="java.js" defer></script>
+</body>
+</html>

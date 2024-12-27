@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aranda Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body class="homepage">
+    <header>
+        <h1>Kaizer's Travel Blog</h1>
+        <nav>
+            <button class="dark-mode-button" onclick="toggleDarkMode()">Toggle Evening Mode</button>
+            <a href="contact.html" style="margin: 0 15px; color: white; text-decoration: none;">Contact</a>
+            <a href="about.html" style="margin: 0 15px; color: white; text-decoration: none;">About</a>
+        </nav>
+    </header>
+    <div class="viewer-container">
+        <div class="viewer">
+            <div class="image-container" id="image1">
+                <img src="images/boracay.jpg" width="200" alt="Boracay">
+            </div>
+            <div class="image-container" id="image2" style="display: none;">
+                <img src="images/masasa.jpg" width="180" alt="Masasa Beach">
+            </div>
+            <div class="image-container" id="image3" style="display: none;">
+                <img src="images/panglao1.jpg" width="180" alt="Panglao Beach">
+            </div>
+        </div>
+        <div class="text-container" id="text-container">
+            <p id="text1">Boracay, the most popular go-to when it comes to beaches in the Philippines...</p>
+            <p id="text2" style="display: none;">Masasa Beach is a serene getaway perfect for relaxation...</p>
+            <p id="text3" style="display: none;">Panglao Beach offers crystal-clear waters and amazing reefs...</p>
+        </div>
+        <div class="action-buttons" id="action-buttons">
+            <button class="action-button" id="button1" onclick="location.href='boracay.html';">Read More</button>
+            <button class="action-button" id="button2" style="display: none;" onclick="location.href='masasa.html';">Read More</button>
+            <button class="action-button" id="button3" style="display: none;" onclick="location.href='panglao.html';">Read More</button>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="nav-button" onclick="showPreviousImage()">↺</button>
+        <button class="nav-button" onclick="showNextImage()">↻</button>
+    </div>
+    <footer class="footer">
+        <div style="margin-top: 10px;">
+            <a href="https://www.facebook.com" target="_blank" style="color: rgb(84, 212, 255); text-decoration: none; margin: 0 10px;">My Facebook</a>            
+        </div>
+        <div style="margin-top: 10px;">
+            <p>Email: <a href="mailto:kaizeredward.aranda@gmail.com" style="color: rgb(0, 123, 164);">kaizeredward.aranda@gmail.com</a></p>
+            <p>Phone: 09925147808</p>
+        </div>
+    </footer>
+    <script src="java.js" defer></script>
+</body>
+</html>

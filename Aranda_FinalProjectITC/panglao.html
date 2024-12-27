@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panglao</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="masasa">
+    <header>
+        <h1>Panglao</h1>
+        <nav>
+            <button class="dark-mode-button" onclick="toggleDarkMode()">Toggle Evening Mode</button>
+            <a href="contact.html" style="margin: 0 15px; color: white; text-decoration: none;">Contact</a>
+            <a href="about.html" style="margin: 0 15px; color: white; text-decoration: none;">About</a>
+            <a href="homepage.html" style="margin: 0 15px; color: white; text-decoration: none;">Home</a>
+        </nav>
+    </header>
+    <div class="viewer-container">
+        <div class="viewer-container">
+            <div class="viewer">
+                <div class="image-container" id="image1">
+                    <img src="images/panglao.jpg"; width="200";>
+                </div>
+                <div class="image-container" id="image2">
+                    <img src="images/panglao1.jpg"; width="180";>
+                </div>
+                <div class="image-container" id="image3">
+                    <img src="images/panglao2.jpg"; width="180";>
+                </div>
+            </div>
+            <div class="text-container" id="text-container">
+                <p id="text1">Panglao Beach, located on the picturesque Panglao Island in Bohol, Philippines, is a slice of tropical paradise. Known for its pristine white sand and crystal-clear waters, it offers an idyllic setting for relaxation and adventure alike.</p>
+                <p id="text2" style="display: none;">The beach is a haven for snorkelers and divers, with its vibrant coral reefs and diverse marine life. Stunning sunsets paint the sky with mesmerizing colors, creating unforgettable moments for visitors.</p>
+                <p id="text3" style="display: none;">Adding to its charm, Panglao boasts warm and friendly locals who ensure a welcoming experience. The area is also close to other attractions like the Chocolate Hills and Hinagdanan Cave, making it a well-rounded destination.</p>
+            </div>
+    </div>
+    <div class="button-container">
+        <button class="nav-button" onclick="showPreviousImage()">↺</button>
+        <button class="nav-button" onclick="showNextImage()">↻</button>
+    </div>
+    <script src="java.js" defer></script>
+</body>
+</html>
